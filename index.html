@@ -1,281 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Logo -->
-<h1 id="logo">
-            <a href="#"><img src="./src/assets/logo.png"></a>
-</h1>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhvanil Barot | Construction Management & Project Engineer</title>
-    <meta name="description" content="Portfolio of Dhvanil Barot, Construction Management graduate at Arizona State University and Project Engineer (MEP & Infrastructure)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <style>
+        :root {
+            --apple-black: #1d1d1f;
+            --apple-grey: #f5f5f7;
+            --apple-blue: #0066cc;
+            --apple-text-grey: #86868b;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #4a4a4a;
-                                    background: url('./src/assets/2148397874.jpg') no-repeat center center fixed;
-                    background-size: cover;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            background: white;
-            padding: 60px 40px;
-            text-align: center;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            -webkit-font-smoothing: antialiased;
         }
 
-                    #logo img {
-        width: 70%;
-        max-width: 200px;
-    }
-        
-        h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            color: #5a6070;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.5;
+            overflow-x: hidden;
         }
-        
-        h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #6b7280;
-        }
-        
-        .subtitle {
-            font-size: 1.5em;
-            color: #666;
-            margin-bottom: 20px;
-        }
-        
-        .intro {
-            font-size: 1.1em;
-            max-width: 800px;
-            margin: 0 auto 30px;
-            line-height: 1.8;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background: #5a6070;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            margin: 10px;
-            transition: all 0.3s;
-            font-weight: bold;
-        }
-        
-        .btn:hover {
-            background: #4a5568;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-        
-        .section {
-            background: white;
-            padding: 40px;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 44px;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: saturate(180%) blur(20px);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             gap: 30px;
+        }
+
+        .navbar a {
+            color: #f5f5f7;
+            text-decoration: none;
+            font-size: 12px;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .navbar a:hover {
+            opacity: 1;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 44px;
+            background: #000;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 600;
+            letter-spacing: -0.005em;
+            margin-bottom: 10px;
+            background: linear-gradient(180deg, #fff 0%, #a1a1a6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            font-weight: 400;
+            color: var(--apple-grey);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            color: var(--apple-text-grey);
+            max-width: 600px;
+        }
+
+        .links {
             margin-top: 30px;
+            display: flex;
+            gap: 20px;
         }
-        
-        .project-card {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            padding: 30px;
-            border-radius: 10px;
-            transition: all 0.3s;
+
+        .link-apple {
+            color: var(--apple-blue);
+            text-decoration: none;
+            font-size: 21px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
-        
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+
+        .link-apple:hover {
+            text-decoration: underline;
         }
-        
-        .project-card h3 {
-            color: #5a6070;
+
+        .section {
+            padding: 100px 20px;
+            background: #fff;
+            color: var(--apple-black);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section.dark {
+            background: #000;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 980px;
+            width: 100%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .card {
+            background: var(--apple-grey);
+            border-radius: 28px;
+            padding: 50px;
+            text-align: center;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 500px;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        .card h3 {
+            font-size: 40px;
             margin-bottom: 15px;
-            font-size: 1.4em;
         }
-        
-        .project-card p {
-            color: #555;
-            line-height: 1.8;
+
+        .card p {
+            font-size: 19px;
+            color: var(--apple-text-grey);
         }
-        
-        .skills-list {
+
+        .skills-grid {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             gap: 15px;
-            margin-top: 20px;
+            margin-top: 30px;
         }
-        
-        .skill-tag {
-            background: #5a6070;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-size: 0.9em;
+
+        .skill-chip {
+            background: #f5f5f7;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-size: 17px;
+            color: #1d1d1f;
+            font-weight: 500;
         }
-        
+
         footer {
-            background: white;
-            padding: 40px;
+            background: var(--apple-grey);
+            padding: 50px 20px;
             text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            color: var(--apple-text-grey);
+            font-size: 12px;
         }
-        
-        .social-links {
-            margin: 20px 0;
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        
-        .social-links a {
-            display: inline-block;
-            margin: 0 15px;
-            color: #5a6070;
-            text-decoration: none;
-            font-size: 1.1em;
-            transition: color 0.3s;
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
-        
-        .social-links a:hover {
-            color: #4a5568;
-        }
-        
+
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2em;
-            }
-            
-            h2 {
-                font-size: 1.5em;
-            }
-            
-            .subtitle {
-                font-size: 1.2em;
-            }
-            
-            header, .section, footer {
-                padding: 30px 20px;
-            }
+            .hero h1 { font-size: 40px; }
+            .grid { grid-template-columns: 1fr; }
+            .card h3 { font-size: 30px; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Dhvanil Barot</h1>
-            <div class="subtitle">Construction Management & Project Engineer</div>
-            <p class="intro">
-                Graduate student in Construction Management at Arizona State University with hands-on experience in MEP & infrastructure projects, 
-                chilled water and HDPE HVAC piping systems, and large-scale civil execution across high-speed rail and industrial facilities.
-            </p>
-            <div>
-                <a href="https://linkedin.com/in/dhvanilbarot" class="btn" target="_blank">LinkedIn</a>
-                <a href="https://github.com/Dhvanil1510" class="btn" target="_blank">GitHub</a>
-                <a href="https://drive.google.com/file/d/1D6euC2hGjzT1GHrbkIvcf1zLUAxl0o9I/view?usp=drive_link" class="btn" target="_blank">Resume</a>
-                <a href="mailto:dhvanilbarot@gmail.com" class="btn">Contact Me</a>
-            </div>
-        </header>
 
-        <section class="section">
-            <h2>Featured Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>PPS – ASU Polytechnic Chilled Water Extension</h3>
-                    <p>
-                        Led earthwork coordination, HDPE HVAC pipeline installation, procurement tracking, and technical documentation 
-                        using Procore and Bluebeam. Managed RFIs and ensured compliance with project specifications.
-                    </p>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="mailto:dhvanilbarot@gmail.com">Contact</a>
+    </nav>
+
+    <header class="hero" id="home">
+        <h1 class="animate__animated animate__fadeInUp">Dhvanil Barot</h1>
+        <h2 class="animate__animated animate__fadeInUp animate__delay-1s">Construction Management & Project Engineer</h2>
+        <p class="animate__animated animate__fadeInUp animate__delay-2s">Graduate student at ASU specializing in MEP, infrastructure, and sustainable project delivery.</p>
+        <div class="links animate__animated animate__fadeInUp animate__delay-2s">
+            <a href="https://linkedin.com/in/dhvanilbarot" class="link-apple">LinkedIn ></a>
+            <a href="https://github.com/Dhvanil1510" class="link-apple">GitHub ></a>
+            <a href="https://drive.google.com/file/d/1D6euC2hGjzT1GHrbkIvcf1zLUAxl0o9I/view?usp=drive_link" class="link-apple">Resume ></a>
+        </div>
+    </header>
+
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 style="font-size: 48px; text-align: center;">Featured Projects</h2>
+            <div class="grid">
+                <div class="card animate-on-scroll">
+                    <h3>ASU Polytechnic</h3>
+                    <p>Chilled Water Extension & Earthwork coordination.</p>
                 </div>
-                
-                <div class="project-card">
-                    <h3>High-Speed Rail Site Management</h3>
-                    <p>
-                        Managed daily operations for a major rail project with 50+ workers. Conducted safety audits, improved scheduling systems, 
-                        and enhanced documentation processes for large-scale infrastructure delivery.
-                    </p>
+                <div class="card animate-on-scroll">
+                    <h3>High-Speed Rail</h3>
+                    <p>Managing site operations and 50+ workers daily.</p>
                 </div>
-                
-                <div class="project-card">
-                    <h3>RMC Plant Delivery for ADANI-ACC</h3>
-                    <p>
-                        Led construction of RMC plant, completing 3 months ahead of schedule while reducing costs by 20–25% through advanced 
-                        scheduling and material planning strategies.
-                    </p>
+                <div class="card animate-on-scroll">
+                    <h3>RMC Plant</h3>
+                    <p>Delivery for ADANI-ACC 3 months ahead of schedule.</p>
                 </div>
-                
-                <div class="project-card">
-                    <h3>IoT-Based Construction Safety & Site Management</h3>
-                    <p>
-                        Government-funded research on wearable safety devices and real-time monitoring systems to improve jobsite safety, 
-                        compliance, and operational efficiency.
-                    </p>
+                <div class="card animate-on-scroll">
+                    <h3>IoT Safety</h3>
+                    <p>Research on wearable devices for construction safety.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="section">
-            <h2>Technical Skills</h2>
-            <div class="skills-list">
-                <span class="skill-tag">Construction Management</span>
-                <span class="skill-tag">Construction/Project Software: Procore, Site Docs, Bluebeam, Adobe, MS O􀆯ice </span>
-                <span class="skill-tag">Modeling/Design: AutoCAD, Revit, BIM Fundamentals </span>
-            
-                <span class="skill-tag">Project Operations: Scheduling, Cost Estimation, Site Supervision, Safety Audits (OSHA 30) </span>
-                
-                <span class="skill-tag">Sustainability: LEED Principles, Energy E􀆯iciency, Carbon Footprint Reduction</span>
-            
+    <section class="section dark" id="skills">
+        <div class="container">
+            <h2 style="font-size: 48px; text-align: center; margin-bottom: 40px;">Technical Prowess.</h2>
+            <div class="skills-grid">
+                <div class="skill-chip animate-on-scroll">Procore</div>
+                <div class="skill-chip animate-on-scroll">Bluebeam</div>
+                <div class="skill-chip animate-on-scroll">AutoCAD</div>
+                <div class="skill-chip animate-on-scroll">Revit</div>
+                <div class="skill-chip animate-on-scroll">BIM</div>
+                <div class="skill-chip animate-on-scroll">OSHA 30</div>
+                <div class="skill-chip animate-on-scroll">LEED</div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="section">
-            <h2>Education</h2>
-            <p style="font-size: 1.2em; line-height: 1.8;">
-                <strong>Arizona State University</strong><br>
-                Master of Science in Construction Management<br>
-                Expected Graduation: May 2026<br><br>
-                Graduate student in Construction Management with 2+ years’ experience in project execution, sustainability, scheduling, and cost
-optimization. Skilled in team leadership, digital construction workflows, and field operations. Seeking opportunities in sustainable
-infrastructure or project management.
-            </p>
-        </section>
+    <footer>
+        <p>&copy; 2026 Dhvanil Barot. Built with precision.</p>
+    </footer>
 
-        <footer>
-            <h2>Let's Connect</h2>
-            <p>I'm actively seeking full-time opportunities in construction management and Project engineering starting Summer 2026.</p>
-            <div class="social-links">
-                <a href="mailto:dhvanilbarot@gmail.com">✉️ Email</a>
-                <a href="https://linkedin.com/in/dhvanilbarot" target="_blank">💼 LinkedIn</a>
-                <a href="https://github.com/Dhvanil1510" target="_blank">💻 GitHub</a>
-            </div>
-            <p style="margin-top: 30px; color: #888;">
-                © 2026 Dhvanil Barot. All rights reserved.
-            </p>
-        </footer>
-    </div>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => observer.observe(el));
+    </script>
 </body>
 </html>
