@@ -1,325 +1,273 @@
-<!-- v2 -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Primary Meta Tags -->
-    <title>
-      Dhvanil Barot | Construction Management & Project Engineer
-    </title>
-    <meta
-      name="title"
-      content="Dhvanil Barot | Construction Management & Project Engineer"
-    />
-    <meta
-      name="description"
-      content="Portfolio of Dhvanil Barot, Construction Management graduate at Arizona State University and Project Engineer (MEP & Infrastructure) with experience in chilled water, HDPE HVAC piping, and large-scale civil projects."
-    />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://dhvanil1510.github.io"
-    />
-    <meta
-      property="og:title"
-      content="Dhvanil Barot | Construction Management & Project Engineer"
-    />
-    <meta
-      property="og:description"
-      content="Showcasing construction, MEP, and infrastructure projects across PPS, high-speed rail, and RMC plant delivery."
-    />
-    <meta
-      property="og:image"
-      content="https://avatars.githubusercontent.com/u/<!-- optional: your GitHub numeric id or another image URL -->"
-    />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta
-      property="twitter:url"
-      content="https://dhvanil1510.github.io"
-    />
-    <meta
-      property="twitter:title"
-      content="Dhvanil Barot | Construction Management & Project Engineer"
-    />
-    <meta
-      property="twitter:description"
-      content="Construction Management graduate with experience in MEP systems, safety, and large infrastructure delivery."
-    />
-    <meta
-      property="twitter:image"
-      content="https://avatars.githubusercontent.com/u/<!-- optional: same as above or other image URL -->"
-    />
-
-    <!-- Icons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/favicon/favicon-16x16.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="assets/favicon/android-chrome-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="512x512"
-      href="assets/favicon/android-chrome-512x512.png"
-    />
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
-    <link rel="manifest" href="assets/favicon/site.webmanifest" />
-
-    <!-- Fonts / Styles -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/utilities.css" />
-  </head>
-  <body>
-    <header id="hero">
-      <!-- Navbar -->
-      <nav class="navbar">
-        <div class="container">
-          <!-- Logo -->
-          <h1 id="logo">
-            <a href="#hero">
-              <img src="./assets/logo.png" alt="Dhvanil Barot Logo" />
-            </a>
-          </h1>
-
-          <!-- Navbar links -->
-          <ul class="nav-menu">
-            <li><a class="nav-link" href="#projects">PROJECTS</a></li>
-            <li><a class="nav-link" href="#contact">CONTACT</a></li>
-            <li>
-              <a
-                class="nav-link btn btn-primary"
-                href="https://drive.google.com/file/d/1D6euC2hGjzT1GHrbkIvcf1zLUAxl0o9I/view?usp=drive_link"
-                target="_blank"
-              >
-                RESUME <i class="fas fa-arrow-right"></i>
-              </a>
-            </li>
-
-            <!-- Toggle switch -->
-            <div class="theme-switch">
-              <input type="checkbox" id="switch" />
-              <label class="toggle-icons" for="switch">
-                <img class="moon" src="assets/moon.svg" />
-                <img class="sun" src="assets/sun.svg" />
-              </label>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhvanil Barot | Construction Management & Project Engineer</title>
+    <meta name="description" content="Portfolio of Dhvanil Barot, Construction Management graduate at Arizona State University and Project Engineer (MEP & Infrastructure)">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: white;
+            padding: 60px 40px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #667eea;
+        }
+        
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #764ba2;
+        }
+        
+        .subtitle {
+            font-size: 1.5em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .intro {
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 10px;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        
+        .btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .section {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .project-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 30px;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .project-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        .project-card p {
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        
+        footer {
+            background: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .social-links {
+            margin: 20px 0;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #764ba2;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            .subtitle {
+                font-size: 1.2em;
+            }
+            
+            header, .section, footer {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dhvanil Barot</h1>
+            <div class="subtitle">Construction Management & Project Engineer</div>
+            <p class="intro">
+                Graduate student in Construction Management at Arizona State University with hands-on experience in MEP & infrastructure projects, 
+                chilled water and HDPE HVAC piping systems, and large-scale civil execution across high-speed rail and industrial facilities.
+            </p>
+            <div>
+                <a href="https://linkedin.com/in/dhvanilbarot" class="btn" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Dhvanil1510" class="btn" target="_blank">GitHub</a>
+                <a href="https://drive.google.com/file/d/1D6euC2hGjzT1GHrbkIvcf1zLUAxl0o9I/view?usp=drive_link" class="btn" target="_blank">Resume</a>
+                <a href="mailto:dhvanilbarot@gmail.com" class="btn">Contact Me</a>
             </div>
-          </ul>
+        </header>
 
-          <!-- Hamburger menu -->
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </div>
-      </nav>
-
-      <!-- Hero section -->
-      <section class="header-container">
-        <img
-          class="profile-image"
-          src="assets/profile-image.png"
-          alt="Dhvanil Barot"
-        />
-
-        <h1>Hi I'm Dhvanil Barot</h1>
-
-        <div class="content-text">
-          <h2>Construction Management</h2>
-          <h2>and Project Engineering</h2>
-
-          <p>
-            Graduate student in Construction Management at Arizona State
-            University with experience in MEP & infrastructure projects, chilled
-            water and HDPE HVAC piping, and large-scale civil execution across
-            rail and industrial facilities.
-          </p>
-        </div>
-
-        <a
-          href="https://linkedin.com/in/dhvanilbarot"
-          class="btn btn-secondary"
-          target="_blank"
-        >
-          Connect With Me
-        </a>
-      </section>
-    </header>
-
-    <!-- Projects -->
-    <section id="projects" class="project-container container">
-      <div class="division"></div>
-      <div class="content-text">
-        <h2>Projects</h2>
-        <p>
-          Selected projects in MEP & infrastructure, high-speed rail, and
-          industrial construction.
-        </p>
-      </div>
-
-      <article class="project">
-        <!-- Project 1: PPS – Chilled Water & HDPE HVAC -->
-        <div class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>PPS – ASU Polytechnic Chilled Water Extension</h3>
-              <p>
-                Earthwork coordination, HDPE HVAC pipeline installation,
-                procurement tracking, RFIs, and technical documentation using
-                Procore and Bluebeam.
-              </p>
+        <section class="section">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>PPS – ASU Polytechnic Chilled Water Extension</h3>
+                    <p>
+                        Led earthwork coordination, HDPE HVAC pipeline installation, procurement tracking, and technical documentation 
+                        using Procore and Bluebeam. Managed RFIs and ensured compliance with project specifications.
+                    </p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>High-Speed Rail Site Management</h3>
+                    <p>
+                        Managed daily operations for a major rail project with 50+ workers. Conducted safety audits, improved scheduling systems, 
+                        and enhanced documentation processes for large-scale infrastructure delivery.
+                    </p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>RMC Plant Delivery for ADANI-ACC</h3>
+                    <p>
+                        Led construction of RMC plant, completing 3 months ahead of schedule while reducing costs by 20–25% through advanced 
+                        scheduling and material planning strategies.
+                    </p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>IoT-Based Construction Safety & Site Management</h3>
+                    <p>
+                        Government-funded research on wearable safety devices and real-time monitoring systems to improve jobsite safety, 
+                        compliance, and operational efficiency.
+                    </p>
+                </div>
             </div>
-            <div class="project-link">
-              <a href="#" target="_blank"><i class="fas fa-file-alt"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+        </section>
+
+        <section class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-list">
+                <span class="skill-tag">Construction Management</span>
+                <span class="skill-tag">MEP Systems Design</span>
+                <span class="skill-tag">Procore</span>
+                <span class="skill-tag">Bluebeam</span>
+                <span class="skill-tag">HDPE & Chilled Water Piping</span>
+                <span class="skill-tag">Project Scheduling</span>
+                <span class="skill-tag">Safety Management (OSHA)</span>
+                <span class="skill-tag">Technical Documentation</span>
+                <span class="skill-tag">RFI Management</span>
+                <span class="skill-tag">Microsoft Excel</span>
+                <span class="skill-tag">P&ID Interpretation</span>
+                <span class="skill-tag">Procurement Tracking</span>
             </div>
-          </div>
-        </div>
+        </section>
 
-        <!-- Project 2: High-Speed Rail – Newmark Enterprises -->
-        <div class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>High-Speed Rail Site Management</h3>
-              <p>
-                Managed daily site operations for a major rail project with 50+
-                workers, safety audits, and improved scheduling and
-                documentation systems.
-              </p>
+        <section class="section">
+            <h2>Education</h2>
+            <p style="font-size: 1.2em; line-height: 1.8;">
+                <strong>Arizona State University</strong><br>
+                Master of Science in Construction Management<br>
+                Expected Graduation: May 2026<br><br>
+                Focusing on MEP systems, infrastructure project management, and construction technology innovation.
+            </p>
+        </section>
+
+        <footer>
+            <h2>Let's Connect</h2>
+            <p>I'm actively seeking full-time opportunities in construction management and MEP engineering starting Summer 2026.</p>
+            <div class="social-links">
+                <a href="mailto:dhvanilbarot@gmail.com">✉️ Email</a>
+                <a href="https://linkedin.com/in/dhvanilbarot" target="_blank">💼 LinkedIn</a>
+                <a href="https://github.com/Dhvanil1510" target="_blank">💻 GitHub</a>
             </div>
-            <div class="project-link">
-              <a href="#" target="_blank"><i class="fas fa-file-alt"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3: RMC Plant – Uttam Engineering -->
-        <div class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>RMC Plant Delivery for ADANI-ACC</h3>
-              <p>
-                Led construction of RMC plant, completing 3 months ahead of
-                schedule while reducing costs by 20–25% through advanced
-                scheduling and material planning.
-              </p>
-            </div>
-            <div class="project-link">
-              <a href="#" target="_blank"><i class="fas fa-file-alt"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 4: IoT-Based Construction Safety -->
-        <div class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>IoT-Based Construction Safety & Site Management</h3>
-              <p>
-                Government-funded research on wearable safety devices and
-                real-time monitoring to improve jobsite safety and compliance.
-              </p>
-            </div>
-            <div class="project-link">
-              <a href="#" target="_blank"><i class="fas fa-file-alt"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <a
-        href="https://drive.google.com/file/d/1D6euC2hGjzT1GHrbkIvcf1zLUAxl0o9I/view?usp=drive_link"
-        class="btn btn-secondary"
-        target="_blank"
-      >
-        See More <i class="fas fa-arrow-right"></i>
-      </a>
-    </section>
-
-    <!-- Contact / Footer -->
-    <footer id="footer">
-      <div class="container" id="contact">
-        <a href="mailto:dhvanilbarot@gmail.com">dhvanilbarot@gmail.com</a>
-
-        <!-- Social links -->
-        <div class="social">
-          <a href="#" target="_blank">
-            <img src="./assets/facebook-icon.svg" alt="Facebook" />
-          </a>
-          <a href="#" target="_blank">
-            <img src="./assets/twitter-icon.svg" alt="Twitter" />
-          </a>
-          <a
-            href="https://linkedin.com/in/dhvanilbarot"
-            target="_blank"
-          >
-            <img src="./assets/linkedin-icon.svg" alt="LinkedIn" />
-          </a>
-          <a href="https://github.com/Dhvanil1510" target="_blank">
-            <img src="./assets/github-icon.svg" alt="GitHub" />
-          </a>
-          <a href="#" target="_blank">
-            <img src="./assets/hashnode-icon.svg" alt="Hashnode" />
-          </a>
-        </div>
-
-        <!-- Attribution (template credit) -->
-        <div class="attribution">
-          <a
-            href="https://github.com/CommunityPro/portfolio-html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="https://user-images.githubusercontent.com/62628408/157202263-9174da24-b19a-4017-9b7c-a1d26ae8f014.svg"
-              alt="attribution"
-              width="150px"
-            />
-          </a>
-        </div>
-
-        <p>
-          Copyright &copy;
-          <span id="datee"></span>
-          , All rights reserved
-        </p>
-      </div>
-    </footer>
-
-    <script src="js/script.js"></script>
-  </body>
+            <p style="margin-top: 30px; color: #888;">
+                © 2026 Dhvanil Barot. All rights reserved.
+            </p>
+        </footer>
+    </div>
+</body>
 </html>
