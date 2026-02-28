@@ -24,7 +24,7 @@
             top: 0;
             width: 100%;
             height: 100px;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0);
             backdrop-filter: saturate(180%) blur(20px);
             z-index: 9999;
             display: flex;
@@ -187,14 +187,15 @@
             color: #a1a1a6;
         }
 
-   .hero-name {
+  .hero-name {
   position: fixed;
-  top: 60px;              /* adjust so it sits under the navbar */
+  top: 110px;          /* navbar height (100px) + small gap */
   left: 50%;
   transform: translateX(-50%);
   z-index: 10000;
-  pointer-events: none;   /* optional so it doesn't block clicks */
+  pointer-events: none;
 }
+
 
 
         /* Skills Grid */
