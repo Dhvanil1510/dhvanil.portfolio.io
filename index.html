@@ -259,6 +259,13 @@
 
         /* Projects Section */
     /* slider wrapper */
+.projects-slider {
+  max-width: 980px;
+  margin: 40px auto 0;
+  position: relative;
+}
+
+/* base card style (same look as before) */
 .projects-slider .project-card {
   background: #f5f5f7;
   border-radius: 18px;
@@ -268,17 +275,14 @@
   transform: translateX(20px);
   position: absolute;
   inset: 0;
-  color: #1d1d1f;              /* body text color */
 }
 
-.projects-slider .project-card h3 {
-  color: #1d1d1f;
+/* only active card is visible */
+.projects-slider .project-card.active {
+  opacity: 1;
+  transform: translateX(0);
+  position: relative;
 }
-
-.projects-slider .project-card .project-desc {
-  color: #6e6e73;
-}
-
 
 
         
