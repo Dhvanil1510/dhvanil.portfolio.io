@@ -33,6 +33,37 @@
         }
 
         .nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* navbar name (start hidden) */
+.nav-name {
+  color: #f5f5f7;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* hero title (start visible) */
+.hero-title {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* states when scrolled past hero */
+.nav-name.visible {
+  opacity: 1;
+}
+
+.hero-title.hidden {
+  opacity: 0;
+}
+
+        .nav-content {
             width: 100%;
             max-width: 980px;
             display: flex;
@@ -310,6 +341,7 @@
         
         <div class="nav-content">
             <a href="#" class="nav-logo"><img src="src/assets/logo.png" alt="Logo" style="height: 80px;"></a>
+            <h1 class="nav-name">Dhvanil Barot</h1>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
