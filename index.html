@@ -119,15 +119,25 @@
         }
 
         .profile-photo {
-           /* keep your size if you want */
-                width: 110mm;
-               height: 150mm;
-             object-fit: cover;
+  /* size and cropping */
+  width: 110mm;
+  height: 150mm;
+  object-fit: cover;
+  display: block;
 
-            /* fade edges to transparent, center stays fully visible */
-           -webkit-mask-image: radial-gradient(circle, black 60%, transparent 100%);
-           mask-image: radial-gradient(circle, black 60%, transparent 100%);
-          }
+  /* soft oval fade to transparent at the edges */
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    black 65%,          /* solid center */
+    transparent 100%    /* fully faded edges */
+  );
+  mask-image: radial-gradient(
+    ellipse at center,
+    black 65%,
+    transparent 100%
+  );
+}
+
 
         .hero-section p {
             font-size: 28px;
