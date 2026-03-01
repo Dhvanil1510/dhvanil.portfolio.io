@@ -235,37 +235,44 @@
 
 
         /* Skills Grid */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            max-width: 980px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+        /* Horizontal skills slider */
+.skills-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 40px 0;
+  max-width: 980px;
+  margin: 0 auto;
 
-        .skill-card {
-            background: #f5f5f7;
-            border-radius: 18px;
-            padding: 30px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
+  /* hide scrollbar but keep functionality */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
 
-        .skill-card:hover {
-            transform: scale(1.05);
-        }
+.skills-slider::-webkit-scrollbar {
+  display: none;
+}
 
-        .skill-card h3 {
-            font-size: 21px;
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
+/* cards in one line, centered on snap */
+.skills-slider .skill-card {
+  flex: 0 0 260px;              /* each card width */
+  scroll-snap-align: center;
+  background: #f5f5f7;
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
-        .skill-card p {
-            font-size: 14px;
-            color: #6e6e73;
-        }
+/* optional: focused card pops a bit */
+.skills-slider .skill-card.active {
+  transform: scale(1.05);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+
 
         /* Projects Section */
     /* slider wrapper */
@@ -371,45 +378,46 @@ infrastructure or Project management.
    
 
     <!-- Technical Prowess Section -->
-    <section class="feature-section light" id="skills">
-        <h2>Technical Prowess</h2>
-        <p class="subtitle">Powerful tools. Powerful results.</p>
-        
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3>Procore</h3>
-                <p>Project Management</p>
-            </div>
-            <div class="skill-card">
-                <h3>Bluebeam</h3>
-                <p>Document Control</p>
-            </div>
-            <div class="skill-card">
-                <h3>AutoCAD</h3>
-                <p>Design & Drafting</p>
-            </div>
-            <div class="skill-card">
-                <h3>Revit</h3>
-                <p>BIM Modeling</p>
-            </div>
-            <div class="skill-card">
-                <h3>BIM</h3>
-                <p>Building Information</p>
-            </div>
-            <div class="skill-card">
-                <h3>OSHA 30</h3>
-                <p>Safety Certified</p>
-            </div>
-            <div class="skill-card">
-                <h3>LEED</h3>
-                <p>Sustainability</p>
-            </div>
-            <div class="skill-card">
-                <h3>MEP</h3>
-                <p>Mechanical</p>
-            </div>
-        </div>
-    </section>
+   <section class="feature-section light" id="skills">
+  <h2>Technical Prowess</h2>
+  <p class="subtitle">Powerful tools. Powerful results.</p>
+
+  <div class="skills-slider" id="skillsSlider">
+    <div class="skill-card"> <!-- 1 -->
+      <h3>Procore</h3>
+      <p>Project Management</p>
+    </div>
+    <div class="skill-card"> <!-- 2 -->
+      <h3>Bluebeam</h3>
+      <p>Document Control</p>
+    </div>
+    <div class="skill-card"> <!-- 3 -->
+      <h3>AutoCAD</h3>
+      <p>Design & Drafting</p>
+    </div>
+    <div class="skill-card"> <!-- 4 -->
+      <h3>Revit</h3>
+      <p>BIM Modeling</p>
+    </div>
+    <div class="skill-card"> <!-- 5 -->
+      <h3>BIM</h3>
+      <p>Building Information</p>
+    </div>
+    <div class="skill-card"> <!-- 6 -->
+      <h3>OSHA 30</h3>
+      <p>Safety Certified</p>
+    </div>
+    <div class="skill-card"> <!-- 7 -->
+      <h3>LEED</h3>
+      <p>Sustainability</p>
+    </div>
+    <div class="skill-card"> <!-- 8 -->
+      <h3>MEP</h3>
+      <p>Mechanical</p>
+    </div>
+  </div>
+</section>
+
 
     <!-- Projects Section -->
     <!-- Projects Section -->
