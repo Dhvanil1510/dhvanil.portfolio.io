@@ -530,42 +530,50 @@ e􀆯iciency.
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const slider = document.getElementById('skillsSlider');
-    const cards = slider ? slider.querySelectorAll('.skill-card') : [];
-    if (!slider || !cards.length) return;
+    const cards  = slider ? slider.querySelectorAll('.skill-card') : [];
+    const skillsSection = document.getElementById('skills');
+    if (!slider || !cards.length || !skillsSection) return;
 
     let index = 0;
 
     function scrollToCard(i) {
       const card = cards[i];
       card.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-
-      cards.forEach((c, idx) => {
-        c.classList.toggle('active', idx === i);
-      });
+      cards.forEach((c, idx) => c.classList.toggle('active', idx === i));
     }
 
     scrollToCard(index);
 
-    // handle wheel scroll only while we are not on last card going down
-    slider.addEventListener('wheel', function (e) {
-      const atLastCard = index === cards.length - 1 && e.deltaY > 0;
-      const atFirstCard = index === 0 && e.deltaY < 0;
+    function isSectionInView() {
+      const rect = skillsSection.getBoundingClientRect();
+      const vh = window.innerHeight || document.documentElement.clientHeight;
+      // section is considered "active" when its middle is in the viewport
+      const sectionMiddle = rect.top + rect.height / 2;
+      return sectionMiddle > 0 && sectionMiddle < vh;
+    }
 
-      // If still in the middle of the slider, use wheel to move cards
-      if (!atLastCard && !atFirstCard) {
-        e.preventDefault(); // stop page from scrolling
-        if (e.deltaY > 0 && index < cards.length - 1) {
-          index++;
-        } else if (e.deltaY < 0 && index > 0) {
-          index--;
-        }
+    window.addEventListener('wheel', function (e) {
+      if (!isSectionInView()) return;  // let page scroll normally
+
+      const atLast  = index === cards.length - 1;
+      const atFirst = index === 0;
+
+      // when in middle cards, hijack scroll
+      if (!atLast && e.deltaY > 0) {
+        e.preventDefault();
+        index++;
+        scrollToCard(index);
+      } else if (!atFirst && e.deltaY < 0) {
+        e.preventDefault();
+        index--;
         scrollToCard(index);
       }
-      // When at last (scrolling down) or first (scrolling up), 
-      // let the page scroll naturally (no preventDefault).
+      // when at first and scrolling up, or at last and scrolling down,
+      // do NOT preventDefault so page can scroll.
     }, { passive: false });
   });
 </script>
+
 
 </body>
 </html>
