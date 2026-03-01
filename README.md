@@ -13,7 +13,6 @@
   <a href="mailto:dhvanilbarot@gmail.com">
     <img src="https://img.shields.io/badge/Email-dhvanilbarot@gmail.com-red?style=flat-square&logo=gmail">
   </a>
-  <img src="https://img.shields.io/badge/Phone-602--637--3985-green?style=flat-square&logo=phone">
 </p>
 
 ---
